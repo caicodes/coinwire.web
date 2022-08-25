@@ -7,6 +7,9 @@ import Code from "./components/mockups/Code.vue"
 import { btnListFull } from "./constants/Styleguide"
 import SafeListTailwind from "./components/app/SafeListTailwind.vue"
 import ThemeChanger from "./components/app/ThemeChanger.vue"
+import Icon from "./components/app/Icon.vue"
+import Logo from "./components/app/Logo.vue"
+
 const containerStyles = container
 const boxStyles = box
 const yo1Styles = yo1
@@ -27,9 +30,14 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
   <NavBar />
   <div :class="containerStyles">
     <Screen id="yo1" :class="yo1Styles" class="bg-base-100"
-      ><div class="box box-1 flex" :class="boxStyles">
+      ><div class="box box-1 flex p-8 mt-8 ml-48" :class="boxStyles">
         <Phone>
-          <div class="text-primary-focus"><ThemeChanger /></div>
+          <!-- <div class="text-primary-focus"><ThemeChanger /></div> -->
+
+          <div class="h-24 flex items-center text-primary">
+            <div class="w-16"><Icon /></div>
+            <div class="w-48"><Logo /></div>
+          </div>
         </Phone></div
     ></Screen>
     <Screen id="yo2" :class="yo2Styles" class="bg-base-200"
