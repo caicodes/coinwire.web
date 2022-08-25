@@ -1,6 +1,33 @@
-# artascecreative landing (vue)
+# coinwire
+
+coinwire.web this is a vue 3 project...
+coinwirelive.web is using react...
 
 vue/vite version of artascecreative landing...
+
+## firebase hosting setup for add on domains...
+
+```
+firebase target:apply hosting coinwire-site coinwire
+
+```
+add the target
+
+firebase.json
+
+```javascript
+// firebase.json
+
+```
+
+add the target...
+
+.firebaserc
+```javascript
+
+// .firebaserc
+```
+
 
 ### currently running vanilla extract with tailwind and daisy... 
 

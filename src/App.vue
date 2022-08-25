@@ -7,6 +7,7 @@ import Code from "./components/mockups/Code.vue"
 import { btnListFull } from "./constants/Styleguide"
 import SafeListTailwind from "./components/app/SafeListTailwind.vue"
 import ThemeChanger from "./components/app/ThemeChanger.vue"
+import Icon from "./components/app/Icon.vue"
 const containerStyles = container
 const boxStyles = box
 const yo1Styles = yo1
@@ -30,7 +31,9 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
       ><div class="box box-1 flex" :class="boxStyles">
         <Phone>
           <div class="text-primary-focus"><ThemeChanger /></div>
-        </Phone></div
+        </Phone>
+
+        <Icon /></div
     ></Screen>
     <Screen id="yo2" :class="yo2Styles" class="bg-base-200"
       ><div class="box box-2" :class="boxStyles">

@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "artasce-website"
-  }
+    "default": "coinwirelive"
+  },
+  "targets": {
+    "coinwirelive": {
+      "hosting": {
+        "coinwire-site": [
+          "coinwire"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
