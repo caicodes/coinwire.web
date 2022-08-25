@@ -5,6 +5,9 @@ import ScrollTo from "gsap/ScrollToPlugin"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { btnListFull } from "../../constants/Styleguide"
 import ThemeChanger from "./ThemeChanger.vue"
+import Icon from "./Icon.vue"
+import Logo from "./Logo.vue"
+
 const btnList = btnListFull
 
 gsap.registerPlugin(ScrollTo)
@@ -64,9 +67,13 @@ onMounted(() => {
       <div class="flex-1 logo">
         <a
           href="/"
-          class="btn btn-primary btn-link hover:no-underline hover:text-primary-focus normal-case text-xl"
-          >scroll smoother</a
+          class="btn text-accent btn-link hover:no-underline hover:text-accent-focus normal-case text-xl"
         >
+          <div class="h-12 flex items-center text-primary">
+            <div class="w-12"><Icon /></div>
+            <div class="w-40"><Logo /></div>
+          </div>
+        </a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal p-0">

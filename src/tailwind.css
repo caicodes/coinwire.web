@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+:root {
+  --primary: orange;
+  --primarylight: orange
+  --secondary: rebeccapurple;
+  --accent: lime;
+} */
