@@ -1,3 +1,4 @@
+<img src='./project/current-light.png' alt='coinwire' height='360' />
 <img src='./project/current.png' alt='coinwire' height='360' />
 
 # coinwire

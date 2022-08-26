@@ -34,9 +34,9 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
         <Phone>
           <!-- <div class="text-primary-focus"><ThemeChanger /></div> -->
 
-          <div class="h-24 flex items-center text-primary">
+          <div class="flex items-center text-primary">
             <div class="w-16"><Icon /></div>
-            <div class="w-48"><Logo /></div>
+            <div class="w-48 mr-4"><Logo /></div>
           </div>
         </Phone></div
     ></Screen>
