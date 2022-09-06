@@ -10,14 +10,11 @@ import Hero from "./components/screens/Hero.vue"
   <NavBar />
   <div class="relative">
     <Hero />
-
-    <Screen id="coins" class="bg-base-100">
-      <div class="box box-2">
-        <Code />
-      </div>
-    </Screen>
     <Screen id="overview" class="bg-base-300">
       overview...
+    </Screen>
+    <Screen id="coins" class="bg-base-100">
+      coins...
     </Screen>
     <Screen id="portfolio" class="bg-secondary-focus/10">
       <div class="box box-4 flex space-x-2">
@@ -32,12 +29,9 @@ import Hero from "./components/screens/Hero.vue"
         <button class="btn btn-outline btn-primary">Primary</button>
         <button class="btn btn-outline btn-secondary">Secondary</button>
         <button class="btn btn-outline btn-accent">Accent</button>
-
       </div>
     </Screen>
-    <Screen id="about" class="bg-primary/10">
-      about
-    </Screen>
+
     <Screen id="faq" class="bg-primary/5">
       faq...
     </Screen>
