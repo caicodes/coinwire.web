@@ -1,10 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 :root {
-  --primary: orange;
-  --primarylight: orange
-  --secondary: rebeccapurple;
-  --accent: lime;
-} */
+  --primary: #058fff;
+  --primary-light: rgba(5, 143, 255, 0.8);
+  --secondary: #063a65;
+  --secondary: #063a65;
+  --secondary-content: #aedafe;
+  --accent: #ffb347;
+  --accent-light: rgba(255, 179, 71, 0.75);
+  --neutral: #1b2946;
+  --base-100: #121212;
+  --base-200: #001424;
+  --info: #0284c7;
+  --success: #059669;
+  --warning: #ea580c;
+  --error: #be123c;
+}

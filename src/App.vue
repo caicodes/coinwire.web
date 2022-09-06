@@ -1,63 +1,36 @@
 <script setup>
+import Code from "./components/mockups/Code.vue"
 import NavBar from "./components/app/NavBar.vue"
 import Screen from "./components/Screen.vue"
-import { box, container, yo1, yo2, yo3, yo4 } from "./App.css.ts"
-import Phone from "./components/mockups/Phone.vue"
-import Code from "./components/mockups/Code.vue"
 import { btnListFull } from "./constants/Styleguide"
-import SafeListTailwind from "./components/app/SafeListTailwind.vue"
-import ThemeChanger from "./components/app/ThemeChanger.vue"
-import Icon from "./components/app/Icon.vue"
-import Logo from "./components/app/Logo.vue"
-
+import { container } from "./App.css.ts"
+import Footer from "./components/app/Footer.vue"
+import Hero from "./components/screens/Hero.vue"
 const containerStyles = container
-const boxStyles = box
-const yo1Styles = yo1
-const yo2Styles = yo2
-const yo3Styles = yo3
-const yo4Styles = yo4
-
 const btnList = btnListFull
-
-const btnVariants = ["glass", "loading", "no-animation"]
-console.log("currently unused... btnVariants ", btnVariants)
-
 const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
 </script>
 
 <template>
-  <SafeListTailwind />
   <NavBar />
-  <div :class="containerStyles">
-    <Screen id="yo1" :class="yo1Styles" class="bg-base-100"
-      ><div class="box box-1 flex p-8 mt-8 ml-48" :class="boxStyles">
-        <Phone>
-          <!-- <div class="text-primary-focus"><ThemeChanger /></div> -->
+  <div :class="containerStyles" class="relative">
+    <Hero />
 
-          <div class="flex items-center text-primary">
-            <div class="w-16"><Icon /></div>
-            <div class="w-48 mr-4"><Logo /></div>
-          </div>
-        </Phone></div
-    ></Screen>
-    <Screen id="yo2" :class="yo2Styles" class="bg-base-200"
-      ><div class="box box-2" :class="boxStyles">
-        <Code /></div
-    ></Screen>
-    <Screen id="yo3" :class="yo3Styles" class="bg-base-300"
-      ><div class="box box-3" :class="boxStyles">
-        <div
-          v-for="item in btnList"
-          class="p-8 m-1 cursor-pointer"
-          :class="`bg-${item}/10 hover:bg-${item} text-${item}`"
-          :key="item"
-        >
+    <Screen id="coins" class="bg-base-200">
+      <div class="box box-2">
+        <Code />
+      </div>
+    </Screen>
+    <Screen id="overview" class="bg-base-300">
+      <div class="box box-3 flex">
+        <div v-for="item in btnList" class="p-8 m-1 cursor-pointer"
+          :class="`bg-${item}/10 hover:bg-${item} text-${item}`" :key="item">
           {{ item }}
         </div>
-      </div></Screen
-    >
-    <Screen id="yo4" :class="yo4Styles" class="bg-secondary-focus/10"
-      ><div class="box box-4" :class="boxStyles">
+      </div>
+    </Screen>
+    <Screen id="portfolio" class="bg-secondary-focus/10">
+      <div class="box box-4 flex space-x-2">
         <button class="btn bg-secondary/10">Info</button>
         <button class="btn bg-primary/10">Info</button>
         <button class="btn btn-ghost loading">Info</button>
@@ -80,15 +53,11 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
         <div class="p-4 bg-primary">
           <button class="btn glass">glass</button>
         </div>
-      </div></Screen
-    ><Screen id="yo5" class="bg-primary/10">
+      </div>
+    </Screen>
+    <Screen id="about" class="bg-primary/10">
       <div v-for="size in btnSizes" :key="size" class="space-x-2 space-y-2">
-        <button
-          v-for="item in btnList"
-          :key="item"
-          class="btn"
-          :class="`btn-${item} btn-${size}`"
-        >
+        <button v-for="item in btnList" :key="item" class="btn" :class="`btn-${item} btn-${size}`">
           {{ item }} {{ size }}
         </button>
         <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
@@ -96,13 +65,16 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
         </button>
       </div>
     </Screen>
-
-    <Screen
-      v-for="item in btnList"
-      :class="`bg-${item}/10`"
-      :key="item"
-      :id="item"
-      >screen-'' {{ item }}</Screen
-    >
+    <Screen id="faq" class="bg-primary/5">
+      <div v-for="size in btnSizes" :key="size" class="space-x-2 space-y-2">
+        <button v-for="item in btnList" :key="item" class="btn" :class="`btn-${item} btn-${size}`">
+          {{ item }} {{ size }}
+        </button>
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+          Responsive
+        </button>
+      </div>
+    </Screen>
+    <Footer />
   </div>
 </template>

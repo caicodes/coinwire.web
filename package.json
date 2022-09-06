@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -13,6 +13,8 @@
     "@vanilla-extract/vite-plugin": "^3.3.1",
     "@vueuse/components": "^9.1.0",
     "@vueuse/core": "^9.1.0",
+    "chart.js": "^3.9.1",
+    "d3": "^7.6.1",
     "daisyui": "^2.24.0",
     "gsap": "^3.11.0",
     "pinia": "^2.0.20",

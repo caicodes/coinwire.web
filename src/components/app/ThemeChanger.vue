@@ -6,19 +6,12 @@ const mode = useColorMode({
   attribute: "data-theme",
   emitAuto: true,
   mode: {
-    // coffee: 'coffee',
-    // synthwave: 'synthwave',
-    // cyberpunk: 'cyberpunk',
-    // forest: 'forest',
-    // aqua: 'aqua',
-    // black: 'black',
-    // luxury: 'luxury',
-    luxury: "luxury",
+    dark: "dark",
   },
 })
 console.log(liveThemes)
-// const { next } = useCycleList(['light', 'dark'], { initialValue: mode })
-const { next } = useCycleList(liveThemes, { initialValue: mode })
+const { next } = useCycleList(["light", "dark"], { initialValue: mode })
+// const { next } = useCycleList(liveThemes, { initialValue: mode })
 </script>
 
 <template>

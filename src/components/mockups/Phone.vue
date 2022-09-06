@@ -3,7 +3,7 @@
     <div class="mockup-phone border-primary">
       <div class="camera"></div>
       <div class="display">
-        <div class="artboard artboard-demo phone-1 bg-base-300">
+        <div class="artboard artboard-demo phone-1 bg-base-100">
           <slot />
         </div>
       </div>
