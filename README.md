@@ -1,14 +1,9 @@
-<img src='./project/current-light.png' alt='coinwire' height='360' />
-<img src='./project/current.png' alt='coinwire' height='360' />
+<img src='./project//coinwire-landing.png' alt='coinwire' />
 
 # coinwire
 
 coinwire.web this is a vue 3 project...
 coinwirelive.web is using react...
-
-
-
-vue/vite version of artascecreative landing starter...
 
 ## firebase hosting setup for add on domains...
 
@@ -43,7 +38,15 @@ so far so good and light years ahead of any other starter on the front end so fa
 
 ## get it done and live... for 2022 and life...
 
-> top candidates for release for the must have push now/today/asap!!!
+> top candidates for release for the must have push
+
+
+### old versions
+
+<img src='./project/current-light.png' alt='coinwire' height='360' />
+<img src='./project/current.png' alt='coinwire' height='360' />
+
+
 
 
 ### wp siteground
