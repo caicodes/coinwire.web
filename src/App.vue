@@ -3,17 +3,15 @@ import Code from "./components/mockups/Code.vue"
 import NavBar from "./components/app/NavBar.vue"
 import Screen from "./components/Screen.vue"
 import { btnListFull } from "./constants/Styleguide"
-import { container } from "./App.css.ts"
 import Footer from "./components/app/Footer.vue"
 import Hero from "./components/screens/Hero.vue"
-const containerStyles = container
 const btnList = btnListFull
 const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
 </script>
 
 <template>
   <NavBar />
-  <div :class="containerStyles" class="relative">
+  <div class="relative">
     <Hero />
 
     <Screen id="coins" class="bg-base-100">

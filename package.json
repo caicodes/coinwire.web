@@ -9,16 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vanilla-extract/css": "^1.7.3",
-    "@vanilla-extract/vite-plugin": "^3.3.1",
     "@vueuse/components": "^9.1.0",
     "@vueuse/core": "^9.1.0",
-    "chart.js": "^3.9.1",
-    "d3": "^7.6.1",
+    "apexcharts": "^3.35.5",
     "daisyui": "^2.24.0",
     "gsap": "^3.11.0",
     "pinia": "^2.0.20",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-apexcharts": "^1.6.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
