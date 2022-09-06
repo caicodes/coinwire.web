@@ -1,5 +1,5 @@
 <template>
-    <div class="flex place-content-center bg-base-100">
+    <div class="flex place-content-center bg-base-100 flex-col md:flex-row">
         <div class="left w-full place-content-center flex flex-col max-w-screen-xl p-24">
             <div class="main-text mb-4  gap-4 flex flex-col">
                 <div class="text-7xl font-semibold mt-4">Cryptocurrency Prices Live</div>
@@ -99,9 +99,6 @@ onMounted(() => {
     })
 
 })
-
-
-
 
 const series = [{
     data: [{
@@ -612,7 +609,6 @@ const chartOptions2 = {
         horizontalAlign: 'left'
     }
 }
-
 
 </script>
 
