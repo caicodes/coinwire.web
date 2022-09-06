@@ -16,7 +16,7 @@ const btnSizes = ["xs", "sm", "md", "lg", "wide", "block", "circle", "square"]
   <div :class="containerStyles" class="relative">
     <Hero />
 
-    <Screen id="coins" class="bg-base-200">
+    <Screen id="coins" class="bg-base-100">
       <div class="box box-2">
         <Code />
       </div>

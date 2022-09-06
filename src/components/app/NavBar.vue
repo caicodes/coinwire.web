@@ -33,24 +33,26 @@ onMounted(() => {
 <template>
   <div class="h-40">
     <div class="navbar bg-base-200 fixed z-50 p-4">
-      <div class="flex-1 logo">
-        <a href="/" class="btn text-accent btn-link hover:no-underline hover:text-accent-focus normal-case text-xl">
-          <div class="h-12 flex items-center text-primary">
-            <div class="w-12">
-              <Icon />
+      <div class="nav flex w-full max-w-screen-2xl mx-auto">
+        <div class="flex-1 logo">
+          <a href="/" class="btn text-accent btn-link hover:no-underline hover:text-accent-focus normal-case text-xl">
+            <div class="h-12 flex items-center text-primary">
+              <div class="w-12">
+                <Icon />
+              </div>
+              <div class="w-40">
+                <Logo />
+              </div>
             </div>
-            <div class="w-40">
-              <Logo />
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal p-0 uppercase mr-8">
-          <li v-for="item in items" :key="item">
-            <a @click="handleClick(item)" class="btn-link text-primary">{{ item }}</a>
-          </li>
-        </ul>
+          </a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0 uppercase mr-8">
+            <li v-for="item in items" :key="item">
+              <a @click="handleClick(item)" class="btn-link text-primary">{{ item }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="navbarbelow pt-16 mt-3 fixed z-30 w-full">

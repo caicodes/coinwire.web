@@ -1,5 +1,5 @@
 <template>
-    <div class="flex place-content-center">
+    <div class="flex place-content-center bg-base-100">
         <div class="left w-1/2 place-content-center flex flex-col">
             <div class="main-text mb-4 p-20 gap-4 flex flex-col">
                 <div class="text-7xl font-semibold mt-4">Cryptocurrency Prices Live</div>
