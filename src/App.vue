@@ -29,7 +29,7 @@ import Hero from "./components/screens/Hero.vue"
     </Screen>
     <Screen id="portfolio" class="bg-base-200">
 
-      <div class="hero-content flex-col lg:flex-row-reverse mx-auto">
+      <div class="hero-content flex-col lg:flex-row-reverse mx-auto my-20">
         <div class="text-center lg:text-left p-8">
           <h1 class="text-5xl font-bold ">Login</h1>
           <p class="py-6">Please login to access your portfolios and settings.</p>
