@@ -12,7 +12,7 @@ import Hero from "./components/screens/Hero.vue"
     <Screen id="overview" class="bg-base-300">
       <div class="mx-auto flex justify-center">
         <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d"
-          lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1"></div>
+          lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#000b15" lcw-border-w="1"></div>
       </div>
 
       <div class="h-96 flex flex-col place-items-center">
@@ -25,7 +25,11 @@ import Hero from "./components/screens/Hero.vue"
 
     </Screen>
     <Screen id="coins" class="bg-base-100">
-      <div class="text-center">Coins Overview</div>
+      <div class="text-center text-3xl">Coins Overview</div>
+      <div class="mx-auto flex justify-center w-1/2">
+        <div class="livecoinwatch-widget-3" lcw-base="USD" lcw-d-head="true" lcw-d-name="true" lcw-d-code="true"
+          lcw-d-icon="true" lcw-color-tx="#ffffff" lcw-color-bg="#000b15" lcw-border-w="1"></div>
+      </div>
     </Screen>
     <Screen id="portfolio" class="bg-base-200">
 
