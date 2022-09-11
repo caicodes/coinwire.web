@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTo)
 gsap.registerPlugin(ScrollTrigger)
 
 const navBarAnimation = gsap.timeline()
-const items = ["welcome", "overview", "coins", "portfolio", "faq"]
+const items = ["welcome", "overview", "coins", "portfolio"]
 const handleClick = (item) => {
   console.log("yo, clicked ", item)
   gsap.to(window, {
