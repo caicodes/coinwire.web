@@ -55,9 +55,11 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div class="navbarbelow pt-16 mt-3 fixed z-30 w-full">
-      <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="var(--primary-light)" lcw-marquee-1="coins"
+    <div class="navbarbelow pt-16 mt-3 fixed z-30 w-full text-center justify-self-center">
+
+      <div class="livecoinwatch-widget-5 " lcw-base="USD" lcw-color-tx="var(--primary-light)" lcw-marquee-1="coins"
         lcw-marquee-2="movers" lcw-marquee-items="10"></div>
+
     </div>
   </div>
 </template>
@@ -70,6 +72,8 @@ onMounted(() => {
 .livecoinwatch-widget-5 {
   z-index: 9999;
   position: relative;
+  margin: auto !important;
+
 }
 
 a.btn-link:hover {
