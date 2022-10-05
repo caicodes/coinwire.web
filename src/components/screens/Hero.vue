@@ -1,7 +1,7 @@
 <template>
-    <div class="flex place-content-center bg-base-100 flex-col md:flex-row">
+    <div class="flex bg-base-100 flex-col md:flex-row">
         <div class="left w-full place-content-center flex flex-col max-w-screen-xl p-24">
-            <div class="main-text mb-4  gap-4 flex flex-col">
+            <div class="main-text -mt-20  gap-4 flex flex-col">
                 <div class="text-7xl font-semibold mt-4">Cryptocurrency Prices Live</div>
                 <div class="sub-title text-3xl px-2">Top Coins by Market Cap</div>
                 <div class="text-2xl w-2/3 px-2">Explore crypto like Bitcoin, Ethereum, and Dogecoin
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-        <div class="phone p-8 mr-20 -ml-20">
+        <div class="phone p-8 -mt-20 mr-20 -ml-20">
             <div class="mockup-phone border-primary">
                 <div class="camera"></div>
                 <div class="display">
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 import gsap from 'gsap'
 import Icon from "../app/Icon.vue"
 import Logo from "../app/Logo.vue"
