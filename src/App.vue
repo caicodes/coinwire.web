@@ -14,15 +14,12 @@ import Hero from "./components/screens/Hero.vue"
         <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d"
           lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#000b15" lcw-border-w="1"></div>
       </div>
-
       <div class="h-96 flex flex-col place-items-center">
-
         <div class="text-2xl p-20 mx-auto">Complete cryptocurrency market coverage with live coin prices, charts
           and crypto market cap featuring 18967 coins on 506 exchanges.
         </div>
         <button class="mx-auto btn btn-primary">Register Now</button>
       </div>
-
     </Screen>
     <Screen id="coins" class="bg-base-100">
       <div class="text-center text-3xl">Coins Overview</div>
@@ -32,7 +29,6 @@ import Hero from "./components/screens/Hero.vue"
       </div>
     </Screen>
     <Screen id="portfolio" class="bg-base-200">
-
       <div class="hero-content flex-col lg:flex-row-reverse mx-auto my-20">
         <div class="text-center lg:text-left p-8">
           <h1 class="text-5xl font-bold ">Login</h1>
@@ -62,11 +58,8 @@ import Hero from "./components/screens/Hero.vue"
           </div>
         </div>
       </div>
-
     </Screen>
-    <!-- <Screen id="faq" class="bg-primary/5">
-      Frequently Asked Questions
-    </Screen> -->
+
     <Footer />
   </div>
 </template>
